@@ -9,37 +9,80 @@
 <body>
     <header>
         <nav>
-            <div class="left">Tanay's Portfolio</div>
-            <!-- <div class="right">
-                <ul>
-                    <li>Home</li>
-                    <li>About Me</li>
-                    <li>My Projects</li>
-                    <li>Contact Me</li>
+            <div class="container">
+                <h1>Tanay Desai</h1>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <div class="bar">Education</div>
+                    <div class="bar">Projects</div>
+                    <div class="bar">Internships</div>
+                </div>
+                <ul id="nav-links">
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#internships">Internships</a></li>
                 </ul>
-            </div> -->
+            </div>
         </nav>
     </header>
     <main>
-        <section class="firstSection">
-            <div class="leftSection">
-                Hii
-                <span class="purple">Minnie-Mau!!!</span> 
-                <div>Tu Na Maja</div>
-                <span id="element"></span>
-            </div>
-            <div class="rightSection">
-                <img src="./doggie.jpg" alt="doggie"/>
+        <section id="education">
+            <div class="container">
+                <h2>Education</h2>
+                <p>MCA-Finolex College Of Management and Technology</p>
+                <p>BSC.IT-Gogate Joglekar college, Ratnagiri</p>
+                <p>HSC-Dr. V.K Toraskar college,Banda</p>
+                <p>SSC-Divya Jyothi English Medium Convent School, Banda</p>
             </div>
         </section>
+        
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <p>News Drafts- A Mobile Application for reporters to note down the news on the spot and capture images.</p>
+                <p>Curewise- A web application for natural remedies as well as to buy medicines.</p>
+            </div>
+        </section>
+        
+        <section id="internships">
+            <div class="container">
+                <h2>Internships</h2>
+                <p>Sutradhar, Pune- React.js worked on html,css and basic javascript for designing pages</p>
+                <p>Travel Rover, Mumbai- Vue.js using quassar framework developed webpages using quassar framework and done bug fixes in previous designed webpages</p>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="container">
+                <p>Instagram</p>
+                <p>LinkedIn</p>
+                <p>Facebook</p>
+                <p>Github</p>
+            </div>
+        </footer>
     </main>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: ['Guni Porgya asay', 'Heroine','Bokad','Paduk','Byle','Thuskula','Dambis'],
+            strings: ['Web Developer','','Frontend Developer','Backend Developer',],
             typeSpeed: 100,
             loop:true
         });
+
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('morph');
+            } else {
+                nav.classList.remove('morph');
+            }
+        });
+
+        // JavaScript code for handling the navigation menu
+            function toggleMenu() {
+                const navLinks = document.getElementById("nav-links");
+                navLinks.classList.toggle("active");
+            }
+
     </script>
 </body>
 </html>
