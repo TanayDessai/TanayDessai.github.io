@@ -84,7 +84,11 @@ main {
 }
 
 .teacher-details h2 {
-    background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+    /* background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    font-size: 72px;
+    background: -webkit-linear-gradient(#eb92b1, #ee1670);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 1.1rem;
