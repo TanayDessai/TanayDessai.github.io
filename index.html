@@ -1,554 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Teacher's Day</title>
-    <link rel="stylesheet" href="HomePage.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tanay's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
 </head>
+
 <body>
-    <header>
-        <span id="element"></span>
-    </header>
-    <div>
-        <h4>"Happy Teacher's Day to the mentors who ignite our minds, inspire our hearts, and light the way to a brighter future.
-        Your dedication and wisdom empower us to reach for the stars."</h4>
-    </div>
-    <div class="slider-container">
-        <div class="slider">
-            <img src="3.jpg" alt="Image 1">
-            <img src="1.jpeg" alt="Image 2">
-            <img src="4.jpg" alt="Image 3">
-            <img src="2.jpg" alt="Image 4">
-            <img src="5.jpg" alt="Image 5">
-            <img src="11.jpeg" alt="Image 6">
-            <img src="7.jpeg" alt="Image 7">
-            <img src="8.jpeg" alt="Image 8">
-            <img src="9.jpeg" alt="Image 9">
+    <nav id="desktop-nav">
+        <div class="logo">Tanay Desai</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-    </div>
-    <main>
-        <section class="teacher-card">
-            <div class="teacher-img">
-                <img src="hod.jpeg" alt="Teacher 2">
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Tanay Desai</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="teacher-details">
-                <h2>Mr.Tejas Joshi Sir</h2>
-            </div>
-        </section>
-        <section class="teacher-card">
-            <div class="teacher-img">
-                <img src="Ravindra.jpeg" alt="Teacher 1">
-            </div>
-            <div class="teacher-details">
-                <h2>Mr.Ravindra Kerkar Sir</h2>
-            </div>
-        </section>
-
-        <section class="teacher-card">
-            <div class="teacher-img">
-                <img src="salvi.jpeg" alt="Teacher 2">
-            </div>
-            <div class="teacher-details">
-                <h2>Ms.Harshada Salvi Mam</h2>
-            </div>
-        </section>
-
-        <section class="teacher-card">
-            <div class="teacher-img">
-                <img src="parurelekar.jpeg" alt="Teacher 2">
-            </div>
-            <div class="teacher-details">
-                <h2>Mr.Waman Parulekar sir</h2>
-            </div>
-        </section>
-
-        <section class="teacher-card">
-            <div class="teacher-img">
-                <img src="supriya.jpeg" alt="Teacher 2">
-            </div>
-            <div class="teacher-details">
-                <h2>Ms.Supriya Surve mam</h2>
-            </div>
-        </section>
-
-        <section class="teacher-card">
-            <div class="teacher-img">
-                <img src="ajinkyasir.png" alt="Teacher 2">
-            </div>
-            <div class="teacher-details">
-                <h2>Mr.Ajinkya Naphade sir</h2>
-            </div>
-        </section>
-    
-        <section class="teacher-card">
-            <div class="teacher-img">
-                <img src="minaxi.png" alt="Teacher 2">
-            </div>
-            <div class="teacher-details">
-                <h2>Ms.Minaxi Gurav mam</h2>
-            </div>
-        </section>
-
-        <section class="teacher-card">
-            <div class="teacher-img">
-                <img src="14.jpeg" alt="Teacher 2">
-            </div>
-            <div class="teacher-details">
-                <h2>Mr.Rahul Kotawadekar sir</h2>
-            </div>
-        </section>
-
-        <section class="teacher-card">
-            <div class="teacher-img">
-                <img src="kishor.jpeg" alt="Teacher 2">
-            </div>
-            <div class="teacher-details">
-                <h2>Mr.Kishor Bhosale sir</h2>
-            </div>
-        </section>
-
-        <section class="teacher-card">
-            <div class="teacher-img">
-                <img src="rakhi.png" alt="Teacher 2">
-            </div>
-            <div class="teacher-details">
-                <h2>Ms.Rakhi Jain mam</h2>
-            </div>
-        </section>
-
-        <section class="teacher-card">
-            <div class="teacher-img">
-                <img src="sprooha.jpeg" alt="Teacher 2">
-            </div>
-            <div class="teacher-details">
-                <h2>Ms.Sprooha Athalye mam</h2>
-            </div>
-        </section>
-
-        <section class="teacher-card">
-            <div class="teacher-img">
-                <img src="darshana.png" alt="Teacher 2">
-            </div>
-            <div class="teacher-details">
-                <h2>Ms.Darshana Bapat mam</h2>
-            </div>
-        </section>
-
-
-        <h4>"Dear Teacher's, your unwavering support, tireless dedication, and profound wisdom have been the guiding force in our
-        journey. Thank you for being the beacon of knowledge and inspiration in our lives. We are forever grateful for
-        everything you've done."</h4>
-
-    </main>
-    <div class="gif">
-    </div>
-    <div class="pop-up">
-        <div id="wrapper">
-            <div class="envelope open">
-                <div class="flap front"></div>
-                <div class="flap top"></div>
-                <div class="letter"></div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
-    </div>
-    <div class="book">
-        <div class="book-first"></div>
-    </div>
-    
-    <script>
-        var confetti = {
-                maxCount: 150,		//set max confetti count
-                speed: 10,			//set the particle animation speed
-                frameInterval: 5,	//the confetti animation frame interval in milliseconds
-                alpha: 1.0,			//the alpha opacity of the confetti (between 0 and 1, where 1 is opaque and 0 is invisible)
-                gradient: false,	//whether to use gradients for the confetti particles
-                start: null,		//call to start confetti animation (with optional timeout in milliseconds, and optional min and max random confetti count)
-                stop: null,			//call to stop adding confetti
-                toggle: null,		//call to start or stop the confetti animation depending on whether it's already running
-                pause: null,		//call to freeze confetti animation
-                resume: null,		//call to unfreeze confetti animation
-                togglePause: null,	//call to toggle whether the confetti animation is paused
-                remove: null,		//call to stop the confetti animation and remove all confetti immediately
-                isPaused: null,		//call and returns true or false depending on whether the confetti animation is paused
-                isRunning: null		//call and returns true or false depending on whether the animation is running
-            };
-
-            (function () {
-                confetti.start = startConfetti;
-                confetti.stop = stopConfetti;
-                confetti.toggle = toggleConfetti;
-                confetti.pause = pauseConfetti;
-                confetti.resume = resumeConfetti;
-                confetti.togglePause = toggleConfettiPause;
-                confetti.isPaused = isConfettiPaused;
-                confetti.remove = removeConfetti;
-                confetti.isRunning = isConfettiRunning;
-                var supportsAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame;
-                var colors = ["rgba(30,144,255,", "rgba(107,142,35,", "rgba(255,215,0,", "rgba(255,192,203,", "rgba(106,90,205,", "rgba(173,216,230,", "rgba(238,130,238,", "rgba(152,251,152,", "rgba(70,130,180,", "rgba(244,164,96,", "rgba(210,105,30,", "rgba(220,20,60,"];
-                var streamingConfetti = false;
-                var animationTimer = null;
-                var pause = false;
-                var lastFrameTime = Date.now();
-                var particles = [];
-                var waveAngle = 0;
-                var context = null;
-
-                function resetParticle(particle, width, height) {
-                    particle.color = colors[(Math.random() * colors.length) | 0] + (confetti.alpha + ")");
-                    particle.color2 = colors[(Math.random() * colors.length) | 0] + (confetti.alpha + ")");
-                    particle.x = Math.random() * width;
-                    particle.y = Math.random() * height - height;
-                    particle.diameter = Math.random() * 10 + 5;
-                    particle.tilt = Math.random() * 10 - 10;
-                    particle.tiltAngleIncrement = Math.random() * 0.07 + 0.05;
-                    particle.tiltAngle = Math.random() * Math.PI;
-                    return particle;
-                }
-
-                function toggleConfettiPause() {
-                    if (pause)
-                        resumeConfetti();
-                    else
-                        pauseConfetti();
-                }
-
-                function isConfettiPaused() {
-                    return pause;
-                }
-
-                function pauseConfetti() {
-                    pause = true;
-                }
-
-                function resumeConfetti() {
-                    pause = false;
-                    runAnimation();
-                }
-
-                function runAnimation() {
-                    if (pause)
-                        return;
-                    else if (particles.length === 0) {
-                        context.clearRect(0, 0, window.innerWidth, window.innerHeight);
-                        animationTimer = null;
-                    } else {
-                        var now = Date.now();
-                        var delta = now - lastFrameTime;
-                        if (!supportsAnimationFrame || delta > confetti.frameInterval) {
-                            context.clearRect(0, 0, window.innerWidth, window.innerHeight);
-                            updateParticles();
-                            drawParticles(context);
-                            lastFrameTime = now - (delta % confetti.frameInterval);
-                        }
-                        animationTimer = requestAnimationFrame(runAnimation);
-                    }
-                }
-
-                function startConfetti(timeout, min, max) {
-                    var width = window.innerWidth;
-                    var height = window.innerHeight;
-                    window.requestAnimationFrame = (function () {
-                        return window.requestAnimationFrame ||
-                            window.webkitRequestAnimationFrame ||
-                            window.mozRequestAnimationFrame ||
-                            window.oRequestAnimationFrame ||
-                            window.msRequestAnimationFrame ||
-                            function (callback) {
-                                return window.setTimeout(callback, confetti.frameInterval);
-                            };
-                    })();
-                    var canvas = document.getElementById("confetti-canvas");
-                    if (canvas === null) {
-                        canvas = document.createElement("canvas");
-                        canvas.setAttribute("id", "confetti-canvas");
-                        canvas.setAttribute("style", "display:block;z-index:999999;pointer-events:none;position:fixed;top:0");
-                        document.body.prepend(canvas);
-                        canvas.width = width;
-                        canvas.height = height;
-                        window.addEventListener("resize", function () {
-                            canvas.width = window.innerWidth;
-                            canvas.height = window.innerHeight;
-                        }, true);
-                        context = canvas.getContext("2d");
-                    } else if (context === null)
-                        context = canvas.getContext("2d");
-                    var count = confetti.maxCount;
-                    if (min) {
-                        if (max) {
-                            if (min == max)
-                                count = particles.length + max;
-                            else {
-                                if (min > max) {
-                                    var temp = min;
-                                    min = max;
-                                    max = temp;
-                                }
-                                count = particles.length + ((Math.random() * (max - min) + min) | 0);
-                            }
-                        } else
-                            count = particles.length + min;
-                    } else if (max)
-                        count = particles.length + max;
-                    while (particles.length < count)
-                        particles.push(resetParticle({}, width, height));
-                    streamingConfetti = true;
-                    pause = false;
-                    runAnimation();
-                    if (timeout) {
-                        window.setTimeout(stopConfetti, timeout);
-                    }
-                }
-
-                function stopConfetti() {
-                    streamingConfetti = false;
-                }
-
-                function removeConfetti() {
-                    stop();
-                    pause = false;
-                    particles = [];
-                }
-
-                function toggleConfetti() {
-                    if (streamingConfetti)
-                        stopConfetti();
-                    else
-                        startConfetti();
-                }
-
-                function isConfettiRunning() {
-                    return streamingConfetti;
-                }
-
-                function drawParticles(context) {
-                    var particle;
-                    var x, y, x2, y2;
-                    for (var i = 0; i < particles.length; i++) {
-                        particle = particles[i];
-                        context.beginPath();
-                        context.lineWidth = particle.diameter;
-                        x2 = particle.x + particle.tilt;
-                        x = x2 + particle.diameter / 2;
-                        y2 = particle.y + particle.tilt + particle.diameter / 2;
-                        if (confetti.gradient) {
-                            var gradient = context.createLinearGradient(x, particle.y, x2, y2);
-                            gradient.addColorStop("0", particle.color);
-                            gradient.addColorStop("1.0", particle.color2);
-                            context.strokeStyle = gradient;
-                        } else
-                            context.strokeStyle = particle.color;
-                        context.moveTo(x, particle.y);
-                        context.lineTo(x2, y2);
-                        context.stroke();
-                    }
-                }
-
-                function updateParticles() {
-                    var width = window.innerWidth;
-                    var height = window.innerHeight;
-                    var particle;
-                    waveAngle += 0.01;
-                    for (var i = 0; i < particles.length; i++) {
-                        particle = particles[i];
-                        if (!streamingConfetti && particle.y < -15)
-                            particle.y = height + 100;
-                        else {
-                            particle.tiltAngle += particle.tiltAngleIncrement;
-                            particle.x += Math.sin(waveAngle) - 0.5;
-                            particle.y += (Math.cos(waveAngle) + particle.diameter + confetti.speed) * 0.5;
-                            particle.tilt = Math.sin(particle.tiltAngle) * 15;
-                        }
-                        if (particle.x > width + 20 || particle.x < -20 || particle.y > height) {
-                            if (streamingConfetti && particles.length <= confetti.maxCount)
-                                resetParticle(particle, width, height);
-                            else {
-                                particles.splice(i, 1);
-                                i--;
-                            }
-                        }
-                    }
-                }
-            })();
-    </script>
-    <script>
-        const startit = () => {
-            setTimeout(function () {
-                confetti.start();
-            }, 2000);
-        };
-
-        const stopit = () => {
-            setTimeout(function () {
-                confetti.stop();
-            }, 7000);
-        };
-
-        startit();
-        stopit();
-    </script>
-    <!-- <div>
-        <marquee width="100%" scrolldelay="60" direction="right" height="30px" class="top">
-            😄❤️👨‍🏫⛵️😍◾◽▪🚲🚃🕉😎🤴🎈🎇⚽🧿🟧🟪🟫⬛🪀🍕🍚🍻🥥🍇🍀🛴⛴❤💦✴💯⚠♻🟨🟩🟦📶🔘🔹🕞🕧🐄🐡🦗🙎‍♂️🏇💪🙌✍💅🎡🏐🎯🏆🥈♣🎖🔩🥇🍁🏵🌹🌻🚩🏳‍🌈⛪🌇🌦🌕🌈🌊⚡💥☢🆗➰💲®⚪🟥⬜◼◻▫🔶🔶
-        </marquee>
-        <marquee width="100%" direction="right" height="30px" class="bottom">
-            😄❤️👨‍🏫⛵️😍◾◽▪🚲🚃🕉😎🤴🎈🎇⚽🧿🟧🟪🟫⬛🪀🍕🍚🍻🥥🍇🍀🛴⛴❤💦✴💯⚠♻🟨🟩🟦📶🔘🔹🕞🕧🐄🐡🦗🙎‍♂️🏇💪🙌✍💅🎡🏐🎯🏆🥈♣🎖🔩🥇🍁🏵🌹🌻🚩🏳‍🌈⛪🌇🌦🌕🌈🌊⚡💥☢🆗➰💲®⚪🟥⬜◼◻▫🔶🔶
-        </marquee>
-    </div> -->
-    
-    <div class="let">
-        <div class="happy">
-            <h1>
-                <span>H</span>
-                <span>A</span>
-                <span>P</span>
-                <span>P</span>
-                <span>Y</span>
-            </h1>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/TanayDesai.jpg" alt="John Doe profile picture" />
         </div>
-        <div class="happy">
-            <h1>
-                <span>T</span>
-                <span>E</span>
-                <span>A</span>
-                <span>C</span>
-                <span>H</span>
-                <span>E</span>
-                <span>R</span>
-                <span>S</span>
-            </h1>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Tanay Desai</h1>
+            <p class="section__text__p2">Full Stack Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/TANAY_DESAI_MCA.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+                    onclick="location.href='https://linkedin.com/'" />
+                <img src="./assets/github.png" alt="My Github profile" class="icon"
+                    onclick="location.href='https://github.com/'" />
+            </div>
         </div>
-        <div class="happy">
-            <h1>
-                <span>D</span>
-                <span>A</span>
-                <span>Y</span>
-            </h1>
-        </div>
-    </div>
-    <!-- <header>
-        <nav>
-            <div class="container">
-                <h1>Tanay Desai</h1>
-                <div class="menu-icon" onclick="toggleMenu()">
-                    <div class="bar">Education</div>
-                    <div class="bar">Projects</div>
-                    <div class="bar">Internships</div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>2+ years <br />Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+                    </div>
                 </div>
-                <ul id="nav-links">
-                    <li><a href="#education">Education</a></li>
+                <div class="text-container">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+                        reprehenderit et laborum, rem, dolore eum quod voluptate
+                        exercitationem nobis, nihil esse debitis maxime facere minus sint
+                        delectus velit in eos quo officiis explicabo deleniti dignissimos.
+                        Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+                        reiciendis ea magnam? Nulla, impedit fuga!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Full Stack Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>SASS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Material UI</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Full Stack Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Node JS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Express JS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project One</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Three</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:tanydesai123@gmail.com">tanydesai123@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#internships">Internships</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
-    </header>
-    <main>
-        <section id="education">
-            <div class="container">
-                <h2>Education</h2>
-                <p>MCA-Finolex College Of Management and Technology</p>
-                <p>BSC.IT-Gogate Joglekar college, Ratnagiri</p>
-                <p>HSC-Dr. V.K Toraskar college,Banda</p>
-                <p>SSC-Divya Jyothi English Medium Convent School, Banda</p>
-            </div>
-        </section>
-        
-        <section id="projects">
-            <div class="container">
-                <h2>Projects</h2>
-                <p>News Drafts- A Mobile Application for reporters to note down the news on the spot and capture images.</p>
-                <p>Curewise- A web application for natural remedies as well as to buy medicines.</p>
-            </div>
-        </section>
-        
-        <section id="internships">
-            <div class="container">
-                <h2>Internships</h2>
-                <p>Sutradhar, Pune- React.js worked on html,css and basic javascript for designing pages</p>
-                <p>Travel Rover, Mumbai- Vue.js using quassar framework developed webpages using quassar framework and done bug fixes in previous designed webpages</p>
-            </div>
-        </section>
-        
-        <footer>
-            <div class="container">
-                <p>Instagram</p>
-                <p>LinkedIn</p>
-                <p>Facebook</p>
-                <p>Github</p>
-            </div>
-        </footer>
-    </main> -->
-    <!-- <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Web Developer','','Frontend Developer','Backend Developer',],
-            typeSpeed: 100,
-            loop:true
-        });
-
-        window.addEventListener('scroll', () => {
-            const nav = document.querySelector('nav');
-            if (window.scrollY > 20) {
-                nav.classList.add('morph');
-            } else {
-                nav.classList.remove('morph');
-            }
-        });
-
-        // JavaScript code for handling the navigation menu
-            function toggleMenu() {
-                const navLinks = document.getElementById("nav-links");
-                navLinks.classList.toggle("active");
-            }
-
-    </script> -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ["🥳🥳 Happy Teacher's Day 🥳🥳", "🥳🥳 Happy Teacher's Day 🥳🥳", "🥳🥳 Happy Teacher's Day 🥳🥳", "🥳🥳 Happy Teacher's Day 🥳🥳", "🥳🥳 Happy Teacher's Day 🥳🥳"],
-            typeSpeed: 100,
-            loop: true,
-        });
-    </script>
-    <script>const slider = document.querySelector('.slider');
-        const images = document.querySelectorAll('.slider img');
-
-        let currentIndex = 0;
-        const intervalTime = 4000; // Time in milliseconds
-        let slideInterval;
-
-        // Function to slide to the next image
-        function slideNext() {
-            currentIndex++;
-            if (currentIndex >= images.length) {
-                currentIndex = 0;
-            }
-            updateSlider();
-        }
-
-        // Function to update the slider to the current image
-        function updateSlider() {
-            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-        }
-
-        // Start the automatic slider
-        function startSlider() {
-            slideInterval = setInterval(slideNext, intervalTime);
-        }
-
-        // Stop the automatic slider when the page loads
-        window.addEventListener('load', startSlider);
-
-        // Pause the automatic slider on mouseover
-        slider.addEventListener('mouseover', () => {
-            clearInterval(slideInterval);
-        });
-
-        // Resume the automatic slider on mouseout
-        slider.addEventListener('mouseout', () => {
-            startSlider();
-        });
-</script>
+        <p>Copyright &#169; 2023 Tanay Desai. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
